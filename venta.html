@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Roboto&display=swap" rel="stylesheet">
+  <title>Venta</title>
+</head>
+
+<body>
+  <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href=".//index.html#story">Hablemos de nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=".//index.html#our_products">Nuestros productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=".//index.html#comentarios">Comentanos tu experiencia</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Aquí acaba el navbar -->
+  <!-- Aquí empieza venta----->
+  <section class="venta">
+    <div class="container_venta">
+      <div class="form">
+        <h2><strong> Realiza tu compra</strong></h2>
+        <form action="exito.html" id="my_form" class="formulario" method="POST">
+          <label for="productos"><strong>Productos</strong></label>
+          <br>
+          <select name="productos"   id="lista" required onchange="ShowSelected();">
+            <option value="">Elige un producto</option>
+            <option value=" arepa huevo">Arepa huevo</option>
+            <option value="empanada">Empanada de pollo</option>
+            <option value="pastel_de_ yuca">Pastel de yuca</option>
+            <option value="avena">Avena</option>
+          </select>
+          
+          <input type="text" id="precio" placeholder="" name="precio" class="data"   Onchange="mostrar()" >
+          <br>
+          <label for="precio"><strong>Precio</strong></label>
+          <br>
+          <input name="cantidad" id="cantidad" class="data"  type="number"  Onchange="mostrar()">
+          <br>
+          <label for="cantidad"><strong>Cantidad</strong></label>
+         <br> 
+         <input name="total" id="total" class="data"  >
+          <br>
+          <label for="total"> <strong>Total a pagar </strong></label>
+          
+          <br>
+          <input type="submit" class="comprar" name="submit" value="aceptar">
+          <input type="reset" class="cancelar_compra" name="reset" value="cancelar"><br>
+        </form>
+      </div>
+    </div>
+
+    <!--Aquí termina venta-->
+    <div class="contact" class="pb-3 pt-3">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 col-lg">
+            <p class="text_social">Siguenos</p>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="https://twitter.com/@LuzPERE04725471" class="social-link twitter"></a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="https://www.facebook.com/profile.php?id=100071598432492" class="social-link facebook"></a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="https://github.com/luzperez" class="social-link github"></a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="https://www.instagram.com/luzmperez1988/" class="social-link instagram"></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <footer id="footer" class="pb-4 pt-4">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 col-lg">
+            <a href="#">@2021saborcaribe</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Contactanos &nbsp;tel:3114962130</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Hecho con ❤️ por <a href="http//wwww.luzperez@gmail.com">@luzperez</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+      <script src="js/index.js"></script>
+    <script src="js/app2.js"></script>
+
+
+</body>
+
+</html>
